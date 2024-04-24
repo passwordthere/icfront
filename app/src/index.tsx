@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { Route, HashRouter as Router, Routes } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import './index.css';
 import { Work } from './pages/Work';
@@ -9,15 +9,13 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  // <React.StrictMode>
-  <HashRouter>
+  <Router>
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route path="/work" element={<Work />} />
       </Route>
     </Routes>
-  </HashRouter>
-  // </React.StrictMode>
+  </Router>
 );
 
 // If you want to start measuring performance in your app, pass a function
