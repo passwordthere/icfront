@@ -10,9 +10,9 @@ export const TextField: React.FC<FieldProps> = ({
     <div>
       <input
         type="text"
-        className="px-2 py-3 mt-2 mb-2 border rounded shadow-sm w-full"
         {...field}
         {...args}
+        className="px-2 py-3 mt-2 mb-2 border rounded shadow-sm w-full"
       />
       {touched[field.name] && errors[field.name] && (
         <ErrorMessage
