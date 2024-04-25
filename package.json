@@ -16,6 +16,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "electron": "^30.0.1"
+    "electron": "^30.0.1",
+    "papaparse": "^5.4.1"
   }
 }

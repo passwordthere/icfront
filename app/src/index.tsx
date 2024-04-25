@@ -3,6 +3,7 @@ import { Route, HashRouter as Router, Routes } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import './index.css';
 import { Work } from './pages/Work';
+import { Work2 } from './pages/Work2';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -13,6 +14,7 @@ root.render(
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route path="/work" element={<Work />} />
+        <Route path="/work2" element={<Work2 />} />
       </Route>
     </Routes>
   </Router>
